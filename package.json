@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "mocha --ui tdd",
-    "brower":""
+    "brower": ""
   },
   "repository": {
     "type": "git",
