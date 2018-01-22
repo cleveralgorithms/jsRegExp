@@ -16,7 +16,7 @@
     "testall": "./node_modules/mocha/bin/mocha --slow 2000 test/*.js",
     "testsingle": "./node_modules/mocha/bin/mocha test/test.js",
     "testwithbash": "bash ./test/test.sh",
-    "brower": "browserify index.js  -o src/jsregexp.js",
+    "browser": "browserify index.js  -o build/jsregexp.js",
     "jsdoc": "jsdoc -c ./jsdoc.json -P ./package.json -R ./README.md",
     "uglyfy":"uglifyjs browser/jsregexp.js -o browser/jsregexp.min.js"
   },
@@ -45,7 +45,6 @@
     "gulp-uglify": "^3.0.0",
     "jsdoc": "^3.5.5",
     "mocha": "~1.0.2",
-    "uniq": "^1.0.1",
     "watchify": "^3.9.0"
   }
 }
