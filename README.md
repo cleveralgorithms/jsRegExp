@@ -4,9 +4,13 @@ note : this is a js regexp lib.
 
 ## Instructions
 ```
-var jsregexp = require('jsregexp');
+var jsregexp = require('crongjsregexp');
 // es6
 jsregexp.password_deep({string:123456} // false
+
+// use import
+import jsregexp from "crongjsregexp"
+
 ```
 ## Pull Requests
 
