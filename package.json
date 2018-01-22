@@ -1,6 +1,6 @@
 {
   "name": "crongjsregexp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "useful js regexp",
   "main": "index.js",
   "testling": {
@@ -17,7 +17,7 @@
     "testsingle": "./node_modules/mocha/bin/mocha test/test.js",
     "testwithbash": "bash ./test/test.sh",
     "brower": "browserify index.js  -o browser/jsregexp.js",
-    "jsdoc":"jsdoc -c ./jsdoc.json -P ./package.json -R ./README.md"
+    "jsdoc": "jsdoc -c ./jsdoc.json -P ./package.json -R ./README.md"
   },
   "repository": {
     "type": "git",
