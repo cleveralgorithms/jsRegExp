@@ -6,7 +6,7 @@ note : this is a js regexp lib(注意：这是一个js的正则库).
 ```
 var jsregexp = require('crongjsregexp');
 // es6
-jsregexp.password_deep({string:123456} // false
+jsregexp.password_deep({string:123456}) // false
 
 // use import
 import jsregexp from "crongjsregexp"
