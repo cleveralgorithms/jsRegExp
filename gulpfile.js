@@ -7,10 +7,10 @@ const babel = require('gulp-babel');
 //重命名
 const rename = require("gulp-rename");
 gulp.task('minifyjs', function() {
-	return gulp.src('src/**/*.js')      //需要操作的文件//合并所有js到bundle.js
+	return gulp.src('build/**/*.js')      //需要操作的文件//合并所有js到bundle.js
 		.pipe(rename({suffix: '.min'}))   //rename压缩后的文件名
 		.pipe(uglify())    //压缩
-		.pipe(gulp.dest('build/'))
+		.pipe(gulp.dest('build/dist'))
 });
 gulp.task('es6', () => {
 	return gulp.src('src/**/*.js')
@@ -18,6 +18,9 @@ gulp.task('es6', () => {
 			presets: ['es2015']
 		}))
 		.pipe(gulp.dest('build'))
+});
+gulp.task('dev', ['es6','minifyjs'],() => {
+	return gulp;
 });
 gulp.task('default', ['es6'], () => {
 	gulp.watch('src/**/*.js', ['es6']);

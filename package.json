@@ -16,7 +16,7 @@
     "testall": "./node_modules/mocha/bin/mocha --slow 2000 test/*.js",
     "testsingle": "./node_modules/mocha/bin/mocha test/test.js",
     "testwithbash": "bash ./test/test.sh",
-    "browser": "browserify index.js  -o build/jsregexp.js",
+    "browser": "browserify index.js  -o src/jsregexp.js",
     "jsdoc": "jsdoc -c ./jsdoc.json -P ./package.json -R ./README.md",
     "uglyfy": "uglifyjs browser/jsregexp.js -o browser/jsregexp.min.js"
   },
