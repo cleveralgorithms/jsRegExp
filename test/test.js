@@ -1,21 +1,26 @@
 var assert = require('chai').assert;
-var foo = 'bar';
+
+var jsregexp = require('../index');
 var beverages = {tea: ['chai', 'matcha', 'oolong']};
 describe('test jsregexp app', () => {
-	describe('testing foo should be string',()=>{
-		it(' foo should be string', () => {
-			assert.typeOf(foo, 'string'); //?
+	describe("test jsregexp.password_deep()",()=>{
+		it(' it should be false', () => {
+			assert.equal(jsregexp.password_deep({string:123456}), false); //?
 		})
 	})
-	it(' foo should equal bar',()=>{
-		assert.equal(foo, 'bar', 'foo equal `bar`');//?
-	})
-	it(' value  has a length of 3 ',()=>{
-		assert.lengthOf(foo, 3, 'foo`s value has a length of 3');
-	})
-	it('beverages has 3 types of tea',()=>{
-		assert.lengthOf(beverages.tea, 3, 'beverages has 3 types of tea');
-	})
-})
+    describe("test jsregexp.custom()",()=>{
+        it(' it should be true', () => {
+            assert.equal(jsregexp.custom(/^\d{5}$/,123456), false); //?
+        })
+    })
+    describe("test jsregexp.replace()",()=>{
+        it(' it should be non blank in pre or after', () => {
+        	var result = jsregexp.replace("   a   b  c  ",/(^\s*)|(\s*$)/g)
+        	console.log(result+'string');
+            assert.isNotEmpty(result); //?
+        })
+    })
+
+});
 
 
