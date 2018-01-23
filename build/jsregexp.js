@@ -629,7 +629,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             return $_(regx).test(string); //?
         }), _defineProperty(_obj, "custom", function custom(regexp, object) {
             if (typeof regexp === "string") {
-                return $_(regx).test(object);
+                return $_(regexp).test(object);
             };
             return regexp.test(object);
         }), _defineProperty(_obj, "replace", function replace(string, regexp) {
