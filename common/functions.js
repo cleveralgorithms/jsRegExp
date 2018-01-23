@@ -685,14 +685,14 @@ var obj = {
     /**
      *  @function
      *  @name custom
-     *  @param {number|string} object 需要验证的数值或者字符串
      *  @param {RegExp|string} regexp 正则表达式 或者 正则表达式字符串
+     *  @param {number|string} object 需要验证的数值或者字符串
      *  @return {boolean} false 或者 true
      *  @desc 自定义正则匹配规则
      * */
     custom: function (regexp, object) {
         if(typeof regexp === "string"){
-            return $_(regx).test(object);
+            return $_(regexp).test(object);
         };
         return regexp.test(object);
     },
