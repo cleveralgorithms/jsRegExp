@@ -1,3 +1,3 @@
-var _ = require('lodash');
-jsREGEXP = require('./lib');
-module.exports = jsREGEXP;
+
+	 global.jsREGEXP = require('./lib');
+		module.exports = jsREGEXP;

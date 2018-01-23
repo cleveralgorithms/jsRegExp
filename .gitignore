@@ -1,6 +1,7 @@
 # .idea
 
 .idea/
+gulpfile.js
 bower_components/
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template

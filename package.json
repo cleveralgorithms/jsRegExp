@@ -1,6 +1,6 @@
 {
   "name": "crongjsregexp",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "useful js regexp",
   "main": "index.js",
   "testling": {
@@ -16,8 +16,9 @@
     "testall": "./node_modules/mocha/bin/mocha --slow 2000 test/*.js",
     "testsingle": "./node_modules/mocha/bin/mocha test/test.js",
     "testwithbash": "bash ./test/test.sh",
-    "brower": "browserify index.js  -o browser/jsregexp.js",
-    "jsdoc": "jsdoc -c ./jsdoc.json -P ./package.json -R ./README.md"
+    "browser": "browserify index.js  -o src/jsregexp.js",
+    "jsdoc": "jsdoc -c ./jsdoc.json -P ./package.json -R ./README.md",
+    "uglyfy": "uglifyjs browser/jsregexp.js -o browser/jsregexp.min.js"
   },
   "repository": {
     "type": "git",
@@ -32,19 +33,17 @@
     "url": "https://github.com/crongwbLab/jsRegExp/issues"
   },
   "homepage": "https://github.com/crongwbLab/jsRegExp#readme",
-  "dependencies": {
-    "lodash": "^4.17.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0",
     "jsdoc": "^3.5.5",
     "mocha": "~1.0.2",
-    "uniq": "^1.0.1",
     "watchify": "^3.9.0"
   }
 }
