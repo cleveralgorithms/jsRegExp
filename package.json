@@ -1,6 +1,6 @@
 {
   "name": "crongjsregexp",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "useful js regexp",
   "main": "index.js",
   "testling": {
