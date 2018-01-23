@@ -11,6 +11,18 @@ jsregexp.password_deep({string:123456}) // false
 // use import
 import jsregexp from "crongjsregexp"
 
+// use AMD (requre.js)
+require('$UI/congrong/script/jsregexp.min');
+jsREGEXP.password_deep(...);
+
+// use COMMONJS in HTML
+
+<script src="path/to/build/jsregexp.js"></script>
+<script>
+   jsREGEXP.password_deep(...);
+</script>
+
+note : you can get the build file in github page.(你可以在github的上获取该文件)
 ```
 ## document(文档) API
 
