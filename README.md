@@ -24,6 +24,12 @@ jsREGEXP.password_deep(...);
 
 note : you can get the build file in github page.(你可以在github的上获取该文件)
 ```
+## browser , AMD (such as requre.js) use the  jsregexp(.min).js show as:
+
+[jsregexp.js](https://github.com/crongwbLab/jsRegExp/blob/master/build/jsregexp.js)
+
+[jsregexp.min.js](https://github.com/crongwbLab/jsRegExp/blob/master/build/dist/jsregexp.min.js)
+
 ## document(文档) API
 
 > please read the API document such as :(请阅读下面的文档)
